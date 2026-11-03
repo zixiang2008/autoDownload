@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets / runtime
+.env
+*.env
+!*.env.example
+failed.json
+*.log
+*.pid
+*.lock
+
+# Media
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.m4a
+*.srt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

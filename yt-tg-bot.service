@@ -1,0 +1,18 @@
+[Unit]
+Description=YouTube Telegram Downloader Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ytbot
+WorkingDirectory=/opt/yt-tg-bot
+EnvironmentFile=/opt/yt-tg-bot/.env
+ExecStart=/opt/yt-tg-bot/venv/bin/python /opt/yt-tg-bot/bot.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
